@@ -1,6 +1,4 @@
-import {currentWeatherDiv} from "../components/current-weather.component.js";
-import {getHourlyWeatherDiv} from "../components/hourly-weather.component.js";
-import {getDailyWeatherDiv} from "../components/daily-weather.component.js";
+import {executeFetch} from "./utils.js";
 
 const apiKeyOpenWeather = '0748c14da3e7026e215f483255902488';
 const DAYS_TO_CONSULT = 7;
@@ -11,22 +9,7 @@ export const getCurrentWeather = async (lat, lon) => {
         `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKeyOpenWeather}&units=metric`,
         { method: 'GET' }
     );
-
-    fetch(request)
-    .then(async response => {
-        const res = await response.json();
-        const currentDiv = document.getElementById('current-weather');
-        currentDiv.innerHTML = currentWeatherDiv(res.current);
-        const hourlyDiv = document.getElementById('hourly-weather');
-        hourlyDiv.innerHTML = getHourlyWeatherDiv(res.hourly);
-        const dailyDiv = document.getElementById('daily-weather');
-        dailyDiv.innerHTML = getDailyWeatherDiv(res.daily);
-        return res;
-    })
-    .catch(error => {
-        console.error(error);
-        return error;
-    })
+    return await executeFetch(request);
 }
 
 const getDailyWeather = async (lat, lon) => {
@@ -35,16 +18,7 @@ const getDailyWeather = async (lat, lon) => {
         { method: 'GET' }
     );
 
-    fetch(request)
-    .then(async response => {
-        const res = await response.json()
-        console.log(res);
-        return res;
-    })
-    .catch(error => {
-        console.error(error);
-        return error;
-    })
+    return await executeFetch(request);
 }
 
 const getHourlyWeather = async (lat, lon) => {
@@ -53,17 +27,5 @@ const getHourlyWeather = async (lat, lon) => {
         { method: 'GET' }
     );
 
-    fetch(request)
-    .then(async response => {
-        const res = await response.json()
-        console.log(res);
-        return res;
-    })
-    .catch(error => {
-        console.error(error);
-        return error;
-    })
+    return await executeFetch(request);
 }
-
-
-

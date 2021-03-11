@@ -1,4 +1,4 @@
-import {getNewsDiv} from "../components/news.component.js";
+import {executeFetch} from "./utils.js";
 
 const apiKeyMediastack = '5e1e6a96b3d7a102dcb68318b10dec4b';
 const date = new Date();
@@ -33,16 +33,5 @@ export const getNews = async () => {
         `http://api.mediastack.com/v1/news?access_key=${apiKeyMediastack}&countries=${countires}&languages=${languages}&date=${yesterdayString},${nowString}&sources=${sources}&limit=${limit}`,
         { method: 'GET' }
     );
-
-    fetch(request)
-        .then(async response => {
-            const res = await response.json();
-            const dailyDiv = document.getElementById('news-list');
-            dailyDiv.innerHTML = getNewsDiv(res.data);
-            return res;
-        })
-        .catch(error => {
-            console.error(error);
-            return error;
-        })
+    return await executeFetch(request);
 }

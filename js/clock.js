@@ -19,5 +19,7 @@ export const myClock = () => {
     const hourToSend = hour + ':' + minute ;
     clockP.innerHTML = hourToSend;
     dayTag.innerHTML = dateFormat;
-    setTimeout('myClock()',1000);
+    setTimeout(function() {
+        myClock();
+    },1000);
 }

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de545285-5d35-4a79-bc21-83ef7dea9803" name="Default Changelist" comment="" />
+    <list default="true" id="de545285-5d35-4a79-bc21-83ef7dea9803" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/news.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/news.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/clock.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/clock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/weather.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +26,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="ProjectId" id="1oX3XHTuEqlZ7RVQ73VzwcMa6Wn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,6 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -36,6 +54,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$" />
@@ -54,6 +75,8 @@
       <workItem from="1614513642747" duration="18827000" />
       <workItem from="1614597666827" duration="6262000" />
       <workItem from="1614795408984" duration="5391000" />
+      <workItem from="1614967918965" duration="729000" />
+      <workItem from="1615491048758" duration="6852000" />
     </task>
     <servers />
   </component>
@@ -61,18 +84,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="-1317" width="2360" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1614630299855">
+    <state x="100" y="-1317" width="2360" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1615492823539">
       <screen x="0" y="-1417" width="2560" height="1417" />
     </state>
-    <state x="100" y="-1317" width="2360" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1440.-455.1440.877/0.23.1792.1097/0.-1417.2560.1417@0.-1417.2560.1417" timestamp="1614630299855" />
-    <state x="987" y="-983" width="586" height="548" key="find.popup" timestamp="1614629714421">
+    <state x="100" y="-1317" width="2360" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1440.-455.1440.877/0.23.1792.1097/0.-1417.2560.1417@0.-1417.2560.1417" timestamp="1615492823539" />
+    <state x="987" y="-983" width="586" height="548" key="find.popup" timestamp="1615496029830">
       <screen x="0" y="-1417" width="2560" height="1417" />
     </state>
-    <state x="987" y="-983" width="586" height="548" key="find.popup/-1440.-455.1440.877/0.23.1792.1097/0.-1417.2560.1417@0.-1417.2560.1417" timestamp="1614629714421" />
-    <state x="945" y="-1092" width="670" height="676" key="search.everywhere.popup" timestamp="1614803628666">
+    <state x="987" y="-983" width="586" height="548" key="find.popup/-1440.-455.1440.877/0.23.1792.1097/0.-1417.2560.1417@0.-1417.2560.1417" timestamp="1615496029830" />
+    <state x="945" y="-1092" width="670" height="676" key="search.everywhere.popup" timestamp="1615495637154">
       <screen x="0" y="-1417" width="2560" height="1417" />
     </state>
-    <state x="945" y="-1092" width="670" height="676" key="search.everywhere.popup/-1440.-455.1440.877/0.23.1792.1097/0.-1417.2560.1417@0.-1417.2560.1417" timestamp="1614803628666" />
+    <state x="945" y="-1092" width="670" height="676" key="search.everywhere.popup/-1440.-455.1440.877/0.23.1792.1097/0.-1417.2560.1417@0.-1417.2560.1417" timestamp="1615495637154" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
