@@ -8,10 +8,14 @@ import {getDailyWeatherDiv} from "../components/daily-weather.component.js";
 import {newP} from "../components/news.component.js";
 import {NUMBER_NOTICE_TO_SHOW} from "../components/news.component.js";
 
-const getCoordinatesCitiesWeather = async () => {
+const getCurrentPosition = async () => {
     const cityPosition = await getCoords();
     console.log('cityPosition ' +  cityPosition);
-    const currentWeather = await getCurrentWeather(cityPosition.lat, cityPosition.long);
+    return cityPosition;
+}
+
+const getCoordinatesCitiesWeather = async (position) => {
+    const currentWeather = await getCurrentWeather(position.lat, position.long);
     console.log('currentWeather ' + currentWeather);
     return currentWeather;
 }
@@ -52,9 +56,37 @@ const renderNews = (news, from) => {
 
 }
 
+const getCiTy = async (lat, long) => {
+    let geocoder = new google.maps.Geocoder;
+    console.log(geocoder);
+    console.log(lat)
+    console.log(long)
+    geocoder.geocode({
+        'location' : {
+            lat :  lat ,
+            lng :  long
+        },
+        // ej. "-34.653015, -58.674850"
+    }, function(results, status) {
+        console.log('// si la solicitud fue exitosa')
+        if (status === google.maps.GeocoderStatus.OK) {
+            // si encontró algún resultado.
+            if (results[1]) {
+                console.log(results[1])
+                return  results[1];
+            }
+        }
+        return results;
+    });
+}
+
 // Application start
 myClock();
-const currentWeather = await getCoordinatesCitiesWeather();
+const position = await getCurrentPosition();
+const currentWeather = await getCoordinatesCitiesWeather(position);
 renderWeather(currentWeather);
 const showNews = await getNews();
 renderNews(showNews, from);
+
+const city  = await getCiTy(position.lat, position.long);
+console.log(city);
